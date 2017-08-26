@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 62442856}
   m_Layer: 0
   m_Name: bullet (7)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 85043581}
   m_Layer: 0
   m_Name: bullet (39)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 128840912}
   m_Layer: 0
   m_Name: bullet (22)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -717,7 +717,7 @@ GameObject:
   - component: {fileID: 169832658}
   m_Layer: 0
   m_Name: bullet (58)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 197455749}
   m_Layer: 0
   m_Name: bullet (9)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -973,7 +973,7 @@ GameObject:
   - component: {fileID: 240297401}
   m_Layer: 0
   m_Name: bullet (2)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1030,7 +1030,7 @@ GameObject:
   - component: {fileID: 258915360}
   m_Layer: 0
   m_Name: bullet (28)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1304,7 +1304,7 @@ GameObject:
   - component: {fileID: 285534991}
   m_Layer: 0
   m_Name: bullet (18)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1361,7 +1361,7 @@ GameObject:
   - component: {fileID: 296037478}
   m_Layer: 0
   m_Name: bullet (11)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1418,7 +1418,7 @@ GameObject:
   - component: {fileID: 305887254}
   m_Layer: 0
   m_Name: bullet (17)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1475,7 +1475,7 @@ GameObject:
   - component: {fileID: 311128919}
   m_Layer: 0
   m_Name: bullet (24)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1532,7 +1532,7 @@ GameObject:
   - component: {fileID: 314452325}
   m_Layer: 0
   m_Name: bullet (37)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1660,7 +1660,7 @@ GameObject:
   - component: {fileID: 353476806}
   m_Layer: 0
   m_Name: bullet (46)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1788,7 +1788,7 @@ GameObject:
   - component: {fileID: 377746096}
   m_Layer: 0
   m_Name: bullet (14)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1845,7 +1845,7 @@ GameObject:
   - component: {fileID: 404029233}
   m_Layer: 0
   m_Name: bullet (31)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2257,7 +2257,7 @@ GameObject:
   - component: {fileID: 518861071}
   m_Layer: 0
   m_Name: bullet (47)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2314,7 +2314,7 @@ GameObject:
   - component: {fileID: 535444464}
   m_Layer: 0
   m_Name: bullet (67)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2442,7 +2442,7 @@ GameObject:
   - component: {fileID: 544919037}
   m_Layer: 0
   m_Name: bullet (45)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2641,7 +2641,7 @@ GameObject:
   - component: {fileID: 587947287}
   m_Layer: 0
   m_Name: bullet (3)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2769,7 +2769,7 @@ GameObject:
   - component: {fileID: 610949927}
   m_Layer: 0
   m_Name: bullet (27)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2826,7 +2826,7 @@ GameObject:
   - component: {fileID: 612726357}
   m_Layer: 0
   m_Name: bullet (40)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2954,7 +2954,7 @@ GameObject:
   - component: {fileID: 629885251}
   m_Layer: 0
   m_Name: bullet (50)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3082,7 +3082,7 @@ GameObject:
   - component: {fileID: 654567441}
   m_Layer: 0
   m_Name: bullet (59)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3139,7 +3139,7 @@ GameObject:
   - component: {fileID: 673395992}
   m_Layer: 0
   m_Name: bullet (44)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3196,7 +3196,7 @@ GameObject:
   - component: {fileID: 702558541}
   m_Layer: 0
   m_Name: bullet (66)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3253,7 +3253,7 @@ GameObject:
   - component: {fileID: 704870454}
   m_Layer: 0
   m_Name: bullet (42)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3452,7 +3452,7 @@ GameObject:
   - component: {fileID: 742982836}
   m_Layer: 0
   m_Name: bullet (38)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3793,7 +3793,7 @@ GameObject:
   - component: {fileID: 816565962}
   m_Layer: 0
   m_Name: bullet (53)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3850,7 +3850,7 @@ GameObject:
   - component: {fileID: 838094055}
   m_Layer: 0
   m_Name: bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4262,7 +4262,7 @@ GameObject:
   - component: {fileID: 901552333}
   m_Layer: 0
   m_Name: bullet (33)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4461,7 +4461,7 @@ GameObject:
   - component: {fileID: 933799484}
   m_Layer: 0
   m_Name: bullet (6)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4518,7 +4518,7 @@ GameObject:
   - component: {fileID: 942058693}
   m_Layer: 0
   m_Name: bullet (5)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4788,7 +4788,7 @@ GameObject:
   - component: {fileID: 961439340}
   m_Layer: 0
   m_Name: bullet (56)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4845,7 +4845,7 @@ GameObject:
   - component: {fileID: 1003776741}
   m_Layer: 0
   m_Name: bullet (12)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5328,7 +5328,7 @@ GameObject:
   - component: {fileID: 1079405053}
   m_Layer: 0
   m_Name: bullet (52)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5385,7 +5385,7 @@ GameObject:
   - component: {fileID: 1087871759}
   m_Layer: 0
   m_Name: bullet (60)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5442,7 +5442,7 @@ GameObject:
   - component: {fileID: 1118347349}
   m_Layer: 0
   m_Name: bullet (35)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5499,7 +5499,7 @@ GameObject:
   - component: {fileID: 1120546738}
   m_Layer: 0
   m_Name: bullet (64)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5556,7 +5556,7 @@ GameObject:
   - component: {fileID: 1173460165}
   m_Layer: 0
   m_Name: bullet (41)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5755,7 +5755,7 @@ GameObject:
   - component: {fileID: 1257004567}
   m_Layer: 0
   m_Name: bullet (23)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5954,7 +5954,7 @@ GameObject:
   - component: {fileID: 1302920134}
   m_Layer: 0
   m_Name: bullet (8)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6082,7 +6082,7 @@ GameObject:
   - component: {fileID: 1309205415}
   m_Layer: 0
   m_Name: bullet (13)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6210,7 +6210,7 @@ GameObject:
   - component: {fileID: 1316438079}
   m_Layer: 0
   m_Name: bullet (25)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6267,7 +6267,7 @@ GameObject:
   - component: {fileID: 1319267848}
   m_Layer: 0
   m_Name: bullet (43)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6324,7 +6324,7 @@ GameObject:
   - component: {fileID: 1349530037}
   m_Layer: 0
   m_Name: bullet (29)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6381,7 +6381,7 @@ GameObject:
   - component: {fileID: 1360578938}
   m_Layer: 0
   m_Name: bullet (49)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6509,7 +6509,7 @@ GameObject:
   - component: {fileID: 1463459515}
   m_Layer: 0
   m_Name: bullet (63)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6637,7 +6637,7 @@ GameObject:
   - component: {fileID: 1470108808}
   m_Layer: 0
   m_Name: bullet (4)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6765,7 +6765,7 @@ GameObject:
   - component: {fileID: 1491938264}
   m_Layer: 0
   m_Name: bullet (55)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6982,7 +6982,7 @@ GameObject:
   - component: {fileID: 1519381693}
   m_Layer: 0
   m_Name: bullet (57)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7039,7 +7039,7 @@ GameObject:
   - component: {fileID: 1524706824}
   m_Layer: 0
   m_Name: bullet (36)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7096,7 +7096,7 @@ GameObject:
   - component: {fileID: 1561217010}
   m_Layer: 0
   m_Name: bullet (30)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7224,7 +7224,7 @@ GameObject:
   - component: {fileID: 1618430312}
   m_Layer: 0
   m_Name: bullet (51)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7281,7 +7281,7 @@ GameObject:
   - component: {fileID: 1631354572}
   m_Layer: 0
   m_Name: bullet (34)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7551,7 +7551,7 @@ GameObject:
   - component: {fileID: 1687983944}
   m_Layer: 0
   m_Name: bullet (10)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7608,7 +7608,7 @@ GameObject:
   - component: {fileID: 1697320518}
   m_Layer: 0
   m_Name: bullet (19)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7665,7 +7665,7 @@ GameObject:
   - component: {fileID: 1706660038}
   m_Layer: 0
   m_Name: bullet (65)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7722,7 +7722,7 @@ GameObject:
   - component: {fileID: 1707584655}
   m_Layer: 0
   m_Name: bullet (21)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7779,7 +7779,7 @@ GameObject:
   - component: {fileID: 1757749838}
   m_Layer: 0
   m_Name: bullet (16)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7907,7 +7907,7 @@ GameObject:
   - component: {fileID: 1783247164}
   m_Layer: 0
   m_Name: bullet (20)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7964,7 +7964,7 @@ GameObject:
   - component: {fileID: 1786121728}
   m_Layer: 0
   m_Name: bullet (54)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8021,7 +8021,7 @@ GameObject:
   - component: {fileID: 1831890607}
   m_Layer: 0
   m_Name: bullet (1)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8078,7 +8078,7 @@ GameObject:
   - component: {fileID: 1853078910}
   m_Layer: 0
   m_Name: bullet (62)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8348,7 +8348,7 @@ GameObject:
   - component: {fileID: 1924348380}
   m_Layer: 0
   m_Name: bullet (32)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8405,7 +8405,7 @@ GameObject:
   - component: {fileID: 1933387214}
   m_Layer: 0
   m_Name: bullet (61)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8533,7 +8533,7 @@ GameObject:
   - component: {fileID: 1979723543}
   m_Layer: 0
   m_Name: bullet (48)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8661,7 +8661,7 @@ GameObject:
   - component: {fileID: 1995125405}
   m_Layer: 0
   m_Name: bullet (15)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8789,7 +8789,7 @@ GameObject:
   - component: {fileID: 2096986657}
   m_Layer: 0
   m_Name: bullet (26)
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
