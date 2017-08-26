@@ -33,4 +33,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-Biplane Inferno/Library/
+**/Library/
