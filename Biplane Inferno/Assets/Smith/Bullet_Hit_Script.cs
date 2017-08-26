@@ -28,32 +28,39 @@ public class Bullet_Hit_Script : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        float rootX = transform.position.x - myCollider.bounds.extents.x;
-        float baseX = transform.position.x + myCollider.bounds.extents.x;
-        float rootY = transform.position.y - myCollider.bounds.extents.y;
-        float baseY = transform.position.y + myCollider.bounds.extents.y;
-        float hitPointX = transform.position.x - collision.contacts[0].point.x;
-        float hitPointY = transform.position.y - collision.contacts[0].point.y;
-        //print("X: " + rootX + " & Y: " + rootY + " To: X: " + baseX + " & Y: " + baseY);
-
-        float normValX = 1 - (hitPointX - rootX) / (baseX - rootX);
-        float normValY = 1 - (hitPointY - rootY) / (baseY - rootY);
-
-        int tempX = (int)(normValX * refMap.width);
-        int tempY = (int)(normValY * refMap.height) - 5;
-        for (int i = -30; i < 30; i++)
+        if (collision.gameObject.tag == "Bullet")
         {
-            for (int j = -30; j < 30; j++)
+            float rootX = transform.position.x - myCollider.bounds.extents.x;
+            float baseX = transform.position.x + myCollider.bounds.extents.x;
+            float rootY = transform.position.y - myCollider.bounds.extents.y;
+            float baseY = transform.position.y + myCollider.bounds.extents.y;
+            float hitPointX = transform.position.x - collision.contacts[0].point.x;
+            float hitPointY = transform.position.y - collision.contacts[0].point.y;
+            //print("X: " + rootX + " & Y: " + rootY + " To: X: " + baseX + " & Y: " + baseY);
+
+            float normValX = 1 - (hitPointX - rootX) / (baseX - rootX);
+            float normValY = 1 - (hitPointY - rootY) / (baseY - rootY);
+
+            int tempX = (int)(normValX * refMap.width);
+            int tempY = (int)(normValY * refMap.height) - 5;
+            for (int i = -30; i < 30; i++)
             {
-                if (refMap.GetPixel(tempX + i, tempY + j).a != 0 && Vector2.Distance(new Vector2(tempX, tempY), new Vector2(tempX + i, tempY + j)) < 30)
+                for (int j = -30; j < 30; j++)
                 {
-                    refMap.SetPixel(tempX + i, tempY + j, refMap.GetPixel(tempX + i, tempY + j).linear + Color.white*12/ Vector2.Distance(new Vector2(tempX, tempY), new Vector2(tempX + i, tempY + j)));
+                    if (refMap.GetPixel(tempX + i, tempY + j).a != 0 && Vector2.Distance(new Vector2(tempX, tempY), new Vector2(tempX + i, tempY + j)) < 30)
+                    {
+                        refMap.SetPixel(tempX + i, tempY + j, refMap.GetPixel(tempX + i, tempY + j).linear + Color.white * 12 / Vector2.Distance(new Vector2(tempX, tempY), new Vector2(tempX + i, tempY + j)));
+                    }
                 }
             }
+            refMap.Apply();
+            //Sprite myNewSprite = Sprite.Create(refMap, new Rect(0, 0, refMap.width, refMap.height), new Vector2(.5f, .5f));
+            myRenderer.material.SetTexture("_Damage", refMap);
+            Destroy(collision.gameObject);
         }
-        refMap.Apply();
-        //Sprite myNewSprite = Sprite.Create(refMap, new Rect(0, 0, refMap.width, refMap.height), new Vector2(.5f, .5f));
-        myRenderer.material.SetTexture("_Damage", refMap);
-        Destroy(collision.gameObject);
+        else if(collision.gameObject.tag == "Plane")
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
