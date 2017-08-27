@@ -1,16 +1,14 @@
-﻿Shader "_Custom_Shaders/Weathering_Shader"
+﻿Shader "MyShaders/Particles/ParticleShader"
 {
 	Properties
 	{
-		_Base ("Base", 2D) = "white" {}
-		_WeatherTex("Wrecked", 2D) = "white" {}
-		_Alpha("Alpha", 2D) = "white" {}
-		_Damage("Damage Map", 2D) = "white" {}
+		_MainTex ("Texture", 2D) = "white" {}
+		_Color ("Color", Color) = (1,1,1,1)
 	}
 	SubShader
 	{
-		Tags {"RenderType" = "Transparent" "Queue" = "Transparent" }
 		// No culling or depth
+		Tags {"RenderType" = "Transparent" "Queue" = "Transparent"}
 		Cull Off ZWrite Off ZTest Always
 		Blend SrcAlpha OneMinusSrcAlpha
 
@@ -42,19 +40,11 @@
 				return o;
 			}
 			
-			sampler2D _Base;
-			sampler2D _WeatherTex;
-			sampler2D _Alpha;
-			sampler2D _Damage;
+			sampler2D _MainTex;
 
 			fixed4 frag (v2f i) : SV_Target
 			{
-				fixed4 base = tex2D(_Base, i.uv);
-				fixed4 weight = tex2D(_Damage, i.uv);
-				fixed4 wreck = tex2D(_WeatherTex, i.uv);
-
-				fixed4 col = base * (1 - weight) + (wreck * weight);
-				col.a = base.a * (1 - weight.r) + wreck.a * weight.r;
+				fixed4 col = tex2D(_MainTex, i.uv);
 				return col;
 			}
 			ENDCG
