@@ -230,7 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DamageMap: {fileID: 2800000, guid: ef4f0826958d83943b2da1cdfc2550d3, type: 3}
   refMap: {fileID: 0}
-  myParticleSystem: {fileID: 1927318482146484, guid: d8ae2c75264b6f44aa9b9ca9c9b25c91,
+  myParticleSystem: {fileID: 1411479465382438, guid: cdb4f9e34427a2b4e97d26976431f668,
     type: 2}
 --- !u!212 &212023553179231732
 SpriteRenderer:
