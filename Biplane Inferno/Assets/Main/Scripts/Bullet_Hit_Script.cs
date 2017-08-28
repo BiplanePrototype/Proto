@@ -31,7 +31,6 @@ public class Bullet_Hit_Script : MonoBehaviour {
         myCollider = GetComponent<PolygonCollider2D>();
         myRenderer = GetComponent<SpriteRenderer>();
         FixedDamageMap = myRenderer.sprite;
-        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
