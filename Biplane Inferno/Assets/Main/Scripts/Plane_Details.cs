@@ -85,6 +85,13 @@ public class Plane_Details : MonoBehaviour {
     {
         CanShoot = false;
         PowerUpAmmo--;
+        for (int i = 0; i < 7; i++)
+        {
+            GameObject temp = Instantiate(Projectile, ProjectileOrigin.position, Quaternion.Euler(new Vector3(0, 0, -15 + (5 * i))));
+            temp.transform.position += temp.transform.up*.25f;
+            temp.GetComponent<Rigidbody2D>().gravityScale = 0;
+            temp.GetComponent<Rigidbody2D>().velocity = temp.transform.up * 10;
+        }
         yield return new WaitForSeconds(BroadCD);
         CanShoot = true;
     }

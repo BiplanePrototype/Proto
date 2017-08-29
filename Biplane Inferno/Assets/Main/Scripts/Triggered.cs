@@ -7,7 +7,7 @@ public class Triggered : MonoBehaviour {
     // triggered
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Destroy")
+        if(collision.gameObject.tag == "Plane")
         {
             Destroy(gameObject);
         }
