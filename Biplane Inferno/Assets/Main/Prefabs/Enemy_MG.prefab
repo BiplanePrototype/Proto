@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114005894943836768}
   - component: {fileID: 114175269154885138}
   - component: {fileID: 114529807347555776}
+  - component: {fileID: 114409662492985560}
   m_Layer: 0
   m_Name: Enemy_MG
   m_TagString: Plane
@@ -184,6 +185,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa82d0e628401bf48a3067472c771523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114409662492985560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1946853396670260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b256383210467b442a547f0a831da7c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!114 &114529807347555776
 MonoBehaviour:
   m_ObjectHideFlags: 1
