@@ -9,11 +9,13 @@ public class HealthEN : MonoBehaviour {
     bool died = false;
     [SerializeField]
     GameObject Pickup;
+	Sound sounds;
 
     Rigidbody2D rb;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+		sounds = GetComponent<Sound>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -23,6 +25,7 @@ public class HealthEN : MonoBehaviour {
         } else if (collision.gameObject.tag == "Missile")
         {
             health -= 20;
+			sounds.ExplosionSound();
         }
         if (collision.gameObject.tag == "Player")
         {
@@ -33,6 +36,7 @@ public class HealthEN : MonoBehaviour {
             died = true;
             Instantiate(Pickup, transform.position, Quaternion.identity);
             Destroy(gameObject);
+			sounds.EnemyDeathSound();
         }
 
     }

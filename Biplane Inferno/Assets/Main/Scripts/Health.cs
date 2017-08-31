@@ -10,10 +10,13 @@ public class Health : MonoBehaviour {
     public float maxHealth;
     Rigidbody2D rb;
     Plane_Details dets;
+	Sound sounds;
+
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
         dets = GetComponent<Plane_Details>();
         maxHealth = health;
+		sounds = GetComponent<Sound>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -29,6 +32,7 @@ public class Health : MonoBehaviour {
         {
             Destroy(gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+			sounds.EnemyDeathSound();
         }
         dets.SetHealthBar(getHealthPercent());
     }
