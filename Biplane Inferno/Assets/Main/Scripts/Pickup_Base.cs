@@ -29,6 +29,11 @@ public class Pickup_Base : MonoBehaviour {
         }
 	}
 
+    private void Update()
+    {
+        transform.position -= new Vector3(0, 5 * Time.deltaTime, 0);
+    }
+
     public LootType MyType
     {
         get
