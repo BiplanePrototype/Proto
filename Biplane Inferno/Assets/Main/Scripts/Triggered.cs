@@ -17,7 +17,7 @@ public class Triggered : MonoBehaviour {
     {
         if(collision.gameObject.tag == "Plane" || collision.gameObject.tag == "Pickup")
         {
-            Destroy(gameObject);
+            DestroyImmediate(gameObject);
         }
     }
 

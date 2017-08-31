@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212417948112978490}
   - component: {fileID: 50982039921598038}
   - component: {fileID: 114544758678094918}
-  - component: {fileID: 58406661290608830}
+  - component: {fileID: 61113831605836396}
   m_Layer: 0
   m_Name: Missile
   m_TagString: Missile
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1734354005508830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.34, y: 4.829, z: 0}
+  m_LocalPosition: {x: -4.077962, y: 4.830986, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63,8 +63,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58406661290608830
-CircleCollider2D:
+--- !u!61 &61113831605836396
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -75,9 +75,19 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.010207862, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.075
+  m_Size: {x: 0.39587635, y: 0.5068458}
+  m_EdgeRadius: 0
 --- !u!114 &114544758678094918
 MonoBehaviour:
   m_ObjectHideFlags: 1

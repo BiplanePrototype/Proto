@@ -99,6 +99,13 @@ public class Plane_Details : MonoBehaviour {
                     }
                     break;
             }
+
+            if (myCurrentWeapon != WeaponType.SINGLE && PowerUpAmmo == 0)
+            {
+                myCurrentWeapon = WeaponType.SINGLE;
+                ammoIconRenderer.sprite = Single;
+                ammoText.text = myAmmo.ToString();
+            }
         }
     }
 
@@ -151,7 +158,10 @@ public class Plane_Details : MonoBehaviour {
                 
                 //Adds ammo to primary gun
                 myAmmo += ctx.Ammo;
-                ammoText.text = myAmmo.ToString();
+                if (myCurrentWeapon == WeaponType.SINGLE)
+                {
+                    ammoText.text = myAmmo.ToString();
+                }
                 break;
             case (LootType.HEALTH):
 

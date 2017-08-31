@@ -12,9 +12,9 @@ public class Sound : MonoBehaviour
 	public AudioClip enemyDeathSound;
 	public AudioClip pickupSound;
 
-	void Start () 
+	void Start ()
 	{
-		audioS = GetComponent<AudioSource>();
+		audioS = GameObject.Find("Player").transform.GetComponent<AudioSource>();
 	}
 	
 	// Methods for using the various sounds

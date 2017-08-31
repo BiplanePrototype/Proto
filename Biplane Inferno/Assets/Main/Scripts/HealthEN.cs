@@ -26,6 +26,7 @@ public class HealthEN : MonoBehaviour {
         {
             health -= 20;
 			sounds.ExplosionSound();
+            Destroy(collision.gameObject);
         }
         if (collision.gameObject.tag == "Player")
         {
