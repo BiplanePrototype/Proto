@@ -44,7 +44,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4328765727687542
 Transform:
   m_ObjectHideFlags: 1
@@ -132,6 +132,10 @@ MonoBehaviour:
   myWeaponType: 1
   ammo: 0
   heal: 0
+  Health: {fileID: 21300000, guid: ce0a780685ed1e244b5d116fbbe71e24, type: 3}
+  AmmoSprite: {fileID: 21300000, guid: 24a316dfb8b6c5f4388546492d976eb8, type: 3}
+  Broad: {fileID: 21300000, guid: 6f20af5a3f16fc345b5c22a29361cf00, type: 3}
+  Missile: {fileID: 21300000, guid: fb3fa83c5406627479395f4dbf0b3b89, type: 3}
 --- !u!212 &212139314378491222
 SpriteRenderer:
   m_ObjectHideFlags: 1

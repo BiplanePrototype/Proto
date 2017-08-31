@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1828093479260666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.79, z: 0}
+  m_LocalPosition: {x: 0, y: -3.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4022129456590316}
@@ -282,6 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
+  maxHealth: 0
 --- !u!114 &114515137912039878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -323,13 +324,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31faf0383844e2a4b81cfecc569e65e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PowerUpAmmo: 0
-  myAmmo: 30
+  PowerUpAmmo: 10
+  myAmmo: 70
   MissileCD: 1
   NormalCD: 0.1
-  BroadCD: 1
+  BroadCD: 0.5
   myCurrentWeapon: 0
   Projectile: {fileID: 1809660624610816, guid: 14066c79622fd6549bc06ddc8f22836c, type: 2}
+  MissileProjectile: {fileID: 1734354005508830, guid: 99632cea45dabed498aebbc4a071c93f,
+    type: 2}
+  Single: {fileID: 21300000, guid: c06c3673528c3424e8bb75471a82bf47, type: 3}
+  Broad: {fileID: 21300000, guid: 3a7ab0fcfb392cd41948aad21c1e8c47, type: 3}
+  Missile: {fileID: 21300000, guid: 873cf6cfd46f0074c85a277bd20642b7, type: 3}
+  AmmoIcon: {fileID: 0}
+  AmmoNumber: {fileID: 0}
+  HealthBar: {fileID: 0}
 --- !u!114 &114813209112168404
 MonoBehaviour:
   m_ObjectHideFlags: 1

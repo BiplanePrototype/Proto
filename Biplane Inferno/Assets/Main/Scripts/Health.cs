@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 public class Health : MonoBehaviour {
 
     // Use this for initialization
-    public int health;
+    public float health;
+    public float maxHealth;
     Rigidbody2D rb;
+    Plane_Details dets;
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
+        dets = GetComponent<Plane_Details>();
+        maxHealth = health;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -26,9 +30,11 @@ public class Health : MonoBehaviour {
             Destroy(gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        dets.SetHealthBar(getHealthPercent());
     }
-    // Update is called once per frame
-    void Update () {
-		
-	}
+
+    public float getHealthPercent()
+    {
+        return health / maxHealth;
+    }
 }

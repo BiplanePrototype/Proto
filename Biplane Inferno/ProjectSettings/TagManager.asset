@@ -8,6 +8,7 @@ TagManager:
   - Plane
   - Destroy
   - Pickup
+  - Missile
   layers:
   - Default
   - TransparentFX

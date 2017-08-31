@@ -13,6 +13,9 @@ public class Pickup_Base : MonoBehaviour {
     [SerializeField]
     int ammo = 0, heal = 0;
 
+    [SerializeField]
+    Sprite Health, AmmoSprite, Broad, Missile;
+
 	// Use this for initialization
 	void Start () {
         int typeVal = Random.Range(0, 100);
@@ -26,6 +29,23 @@ public class Pickup_Base : MonoBehaviour {
         } else
         {
             heal = Random.Range(0, 10);
+        }
+        SpriteRenderer temp = transform.Find("Sprite").GetComponent<SpriteRenderer>();
+        if (myType == LootType.WEAPON)
+        {
+            if (myWeaponType == WeaponType.BROAD)
+            {
+                temp.sprite = Broad;
+            } else if (myWeaponType == WeaponType.MISSILE)
+            {
+                temp.sprite = Missile;
+            }
+        } else if (myType == LootType.AMMO)
+        {
+            temp.sprite = AmmoSprite;
+        } else if (myType == LootType.HEALTH)
+        {
+            temp.sprite = Health;
         }
 	}
 

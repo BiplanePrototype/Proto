@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum WeaponType { SINGLE, BROAD, MISSILE };
 
 public class Plane_Details : MonoBehaviour {
-    int Health = 100, MaxHealth = 100;
+    Health myHealth;
     int Score = 0;
     float DistanceTraveled = 0;
     bool CanShoot = true;
@@ -20,14 +21,32 @@ public class Plane_Details : MonoBehaviour {
     WeaponType myCurrentWeapon = WeaponType.SINGLE;
 
     [SerializeField]
-    GameObject Projectile;
+    GameObject Projectile, MissileProjectile;
     Transform ProjectileOrigin;
+
+    [SerializeField]
+    Sprite Single, Broad, Missile;
+
+    [Space]
+    [SerializeField]
+    Transform AmmoIcon, AmmoNumber, HealthBar;
+
+    Material HealthBarMat;
+    Text ammoText;
+    Image ammoIconRenderer;
 
 	Sound sounds;
 
     void Start()
     {
         ProjectileOrigin = transform.Find("Projectile_Origin");
+        HealthBarMat = HealthBar.GetComponent<Image>().material;
+        ammoText = AmmoNumber.GetComponent<Text>();
+        ammoIconRenderer = AmmoIcon.GetComponent<Image>();
+        ammoIconRenderer.sprite = Single;
+        ammoText.text = myAmmo.ToString();
+        myHealth = GetComponent<Health>();
+        HealthBarMat.SetFloat("_Range", 1);
 		sounds = GetComponent<Sound>();
     }
 
@@ -40,9 +59,12 @@ public class Plane_Details : MonoBehaviour {
                     if (PowerUpAmmo > 0)
                     {
                         StartCoroutine(ShootMissile());
+                        ammoText.text = PowerUpAmmo.ToString();
                     } else
                     {
                         myCurrentWeapon = WeaponType.SINGLE;
+                        ammoIconRenderer.sprite = Single;
+                        ammoText.text = myAmmo.ToString();
                         if (myAmmo > 0)
                         {
                             StartCoroutine(ShootNormal());
@@ -53,10 +75,13 @@ public class Plane_Details : MonoBehaviour {
                     if (PowerUpAmmo > 0)
                     {
                         StartCoroutine(ShootBroad());
+                        ammoText.text = PowerUpAmmo.ToString();
                     }
                     else
                     {
                         myCurrentWeapon = WeaponType.SINGLE;
+                        ammoIconRenderer.sprite = Single;
+                        ammoText.text = myAmmo.ToString();
                         if (myAmmo > 0)
                         {
                             StartCoroutine(ShootNormal());
@@ -67,6 +92,7 @@ public class Plane_Details : MonoBehaviour {
                     if (myAmmo > 0)
                     {
                         StartCoroutine(ShootNormal());
+                        ammoText.text = myAmmo.ToString();
                     } else
                     {
                         //Play a click sound, flash, whatever
@@ -81,6 +107,9 @@ public class Plane_Details : MonoBehaviour {
 		sounds.MissileSound();
         CanShoot = false;
         PowerUpAmmo--;
+        Rigidbody2D rgd2d = Instantiate(MissileProjectile, ProjectileOrigin.position, Quaternion.identity).GetComponent<Rigidbody2D>();
+        rgd2d.gravityScale = 0;
+        rgd2d.velocity = transform.up * 25;
         yield return new WaitForSeconds(MissileCD);
         CanShoot = true;
     }
@@ -122,24 +151,40 @@ public class Plane_Details : MonoBehaviour {
                 
                 //Adds ammo to primary gun
                 myAmmo += ctx.Ammo;
+                ammoText.text = myAmmo.ToString();
                 break;
             case (LootType.HEALTH):
 
                 //Heals ship to max health if heal value does not exceed max.
-                Health = (Health + ctx.Heal > MaxHealth ? MaxHealth : Health + ctx.Heal);
+                myHealth.health = (myHealth.health + ctx.Heal > myHealth.maxHealth ? myHealth.maxHealth : myHealth.health + ctx.Heal);
+                HealthBarMat.SetFloat("_Range", myHealth.getHealthPercent());
                 break;
             case (LootType.WEAPON):
 
                 //Determining Pickup Weapon Type
                 myCurrentWeapon = ctx.MyWeaponType;
-               
                 //Based on which type of weapon powerup it is, assign ammo value
                 PowerUpAmmo = (myCurrentWeapon == WeaponType.BROAD ? 10 : 5);
+
+                if (myCurrentWeapon == WeaponType.BROAD)
+                {
+                    ammoIconRenderer.sprite = Broad;
+                }
+                else
+                {
+                    ammoIconRenderer.sprite = Missile;
+                }
+                ammoText.text = PowerUpAmmo.ToString();
                 break;
         }
 
         //Destroying pickup, removing from the game world.
         Destroy(ctx.gameObject);
 		sounds.PickupSound();
+    }
+
+    public void SetHealthBar(float percent)
+    {
+        HealthBarMat.SetFloat("_Range", percent);
     }
 }

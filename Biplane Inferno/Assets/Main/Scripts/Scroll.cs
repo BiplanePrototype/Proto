@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Scroll : MonoBehaviour {
 
@@ -9,17 +10,16 @@ public class Scroll : MonoBehaviour {
     private float scrollSpeed; // speed of scrolling background
 
     /* PRIVATE VARIABLES */
-    private Renderer render; // renderer of material
+    private Image render; // renderer of material
 
 	// Use this for initialization
 	void Start () {
-        render = GetComponent<Renderer>(); // get the material renderer for the background
+        render = GetComponent<Image>(); // get the material renderer for the background
 	}
 	
 	// Update is called once per frame
 	void Update () {
         Vector2 offset = new Vector2(0, Time.time * scrollSpeed);
-
         render.material.mainTextureOffset = offset;
 	}
 }
