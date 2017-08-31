@@ -6,7 +6,7 @@ public class HealthEN : MonoBehaviour {
 
     // Use this for initialization
     public int health;
-
+    bool died = false;
     [SerializeField]
     GameObject Pickup;
 
@@ -17,7 +17,6 @@ public class HealthEN : MonoBehaviour {
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        bool died = false;
         if (collision.gameObject.tag == "Bullet")
         {
             health-= 10;
