@@ -26,6 +26,8 @@ GameObject:
   - component: {fileID: 114607031117419798}
   - component: {fileID: 114515137912039878}
   - component: {fileID: 114276106940476962}
+  - component: {fileID: 82322385065036120}
+  - component: {fileID: 114592643787427090}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -188,6 +190,86 @@ PolygonCollider2D:
       - {x: -1.935, y: 0.895}
       - {x: -1.9549999, y: 0.91499996}
       - {x: -1.9649999, y: 0.91499996}
+--- !u!82 &82322385065036120
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1828093479260666}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114276106940476962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -212,6 +294,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 100
+--- !u!114 &114592643787427090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1828093479260666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78df2d5aa3fc3c4e919e0e78242dd62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioS: {fileID: 0}
+  shotgunSound: {fileID: 8300000, guid: 6d65ce7a4d86361499fe3a42ef3ab41e, type: 3}
+  gunSound: {fileID: 8300000, guid: 80fa48b94b5f9b04ebfda04b7027933c, type: 3}
+  missileSound: {fileID: 8300000, guid: cd40b205f045bcd42aeecf0ff5e358e3, type: 3}
+  explosionSound: {fileID: 8300000, guid: e4d51edb72009e341b3f226b9721a6b4, type: 3}
+  enemyDeathSound: {fileID: 8300000, guid: 1d0941f8b6c84e143a0a544a8ba32bd5, type: 3}
+  pickupSound: {fileID: 8300000, guid: 522dc597a7a75bb42941be72b3d53c20, type: 3}
 --- !u!114 &114607031117419798
 MonoBehaviour:
   m_ObjectHideFlags: 1

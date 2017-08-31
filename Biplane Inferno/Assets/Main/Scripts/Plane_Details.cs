@@ -23,9 +23,12 @@ public class Plane_Details : MonoBehaviour {
     GameObject Projectile;
     Transform ProjectileOrigin;
 
+	Sound sounds;
+
     void Start()
     {
         ProjectileOrigin = transform.Find("Projectile_Origin");
+		sounds = GetComponent<Sound>();
     }
 
     void Update()
@@ -75,6 +78,7 @@ public class Plane_Details : MonoBehaviour {
 
     IEnumerator ShootMissile()
     {
+		sounds.MissileSound();
         CanShoot = false;
         PowerUpAmmo--;
         yield return new WaitForSeconds(MissileCD);
@@ -83,6 +87,7 @@ public class Plane_Details : MonoBehaviour {
 
     IEnumerator ShootBroad()
     {
+		sounds.ShotgunSound();
         CanShoot = false;
         PowerUpAmmo--;
         for (int i = 0; i < 7; i++)
@@ -98,6 +103,7 @@ public class Plane_Details : MonoBehaviour {
 
     IEnumerator ShootNormal()
     {
+		sounds.GunSound();
         CanShoot = false;
         myAmmo--;
         Rigidbody2D rgd2d = Instantiate(Projectile, ProjectileOrigin.position, Quaternion.identity).GetComponent<Rigidbody2D>();
@@ -134,5 +140,6 @@ public class Plane_Details : MonoBehaviour {
 
         //Destroying pickup, removing from the game world.
         Destroy(ctx.gameObject);
+		sounds.PickupSound();
     }
 }

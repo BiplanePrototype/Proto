@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: b78df2d5aa3fc3c4e919e0e78242dd62
+timeCreated: 1504162262
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - audioS: {instanceID: 0}
+  - shotgunSound: {fileID: 8300000, guid: 6d65ce7a4d86361499fe3a42ef3ab41e, type: 3}
+  - gunSound: {fileID: 8300000, guid: 80fa48b94b5f9b04ebfda04b7027933c, type: 3}
+  - missileSound: {fileID: 8300000, guid: cd40b205f045bcd42aeecf0ff5e358e3, type: 3}
+  - explosionSound: {fileID: 8300000, guid: e4d51edb72009e341b3f226b9721a6b4, type: 3}
+  - enemyDeathSound: {fileID: 8300000, guid: 1d0941f8b6c84e143a0a544a8ba32bd5, type: 3}
+  - pickupSound: {fileID: 8300000, guid: 522dc597a7a75bb42941be72b3d53c20, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
